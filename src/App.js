@@ -249,8 +249,8 @@ export default function App() {
               src="/images/cta.jpg"
               alt="Signage showcase"
               className="w-full h-full object-cover"
-            />          
-            </div>
+            />
+          </div>
           <div className='container mx-auto z-10 px-4 py-28'>
             <div className='w-1/2 ml-auto pl-4 text-white'>
               <h1 className='text-5xl font-bold'>
@@ -271,6 +271,105 @@ export default function App() {
           </div>
 
         </section>
+        <footer className='bg-dark text-white mt-auto'>
+          <div className='container mx-auto px-4 py-16'>
+            <h2 className="text-3xl font-semibold tracking-tighter sm:text-4xl text-center xl:text-5xl/none mb-10 w-full md:w-1/2 mx-auto">Get in touch</h2>
+            {/* Add more footer content here */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+              <div>
+                <h3 className="text-xl font-bold mb-4">Contact Us</h3>
+                <div className='space-y-2'>
+                  <div className='flex items-center space-x-2'>
+                    <div className='bg-custom-gradient p-1'>
+                      <img
+                        src="/images/call.svg"
+                        alt="Signage showcase"
+                        className="w-12 h-12"
+                      />
+                    </div>
+                    <div>
+                      <p className='opacity-70'>Phone:</p>
+                      <h1 className='text-lg font-bold'>067 315 7397</h1>
+                    </div>
+                  </div>
+                  <div className='flex items-center space-x-2'>
+                    <div className='bg-custom-gradient p-1'>
+                      <img
+                        src="/images/whatsapp.svg"
+                        alt="Signage showcase"
+                        className="w-12 h-12"
+                      />
+                    </div>
+                    <div>
+                      <p className='opacity-70'>WhatsApp:</p>
+                      <h1 className='text-lg font-bold'>067 315 7397</h1>
+                    </div>
+                  </div>
+                  <div className='flex items-center space-x-2'>
+                    <div className='bg-custom-gradient p-1'>
+                      <img
+                        src="/images/email.svg"
+                        alt="Signage showcase"
+                        className="w-12 h-12"
+                      />
+                    </div>
+                    <div>
+                      <p className='opacity-70'>Email:</p>
+                      <h1 className='text-lg font-bold'>admin@dannyniches.co.za</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-4">Follow Us</h3>
+                <div className='space-y-2'>
+                  <div className='flex items-center space-x-2'>
+                    <div className='bg-custom-gradient p-1'>
+                      <img
+                        src="/images/facebook.png"
+                        alt="Signage showcase"
+                        className="w-12 h-12"
+                      />
+                    </div>
+                    <div>
+                      <p className='opacity-70'>Facebook:</p>
+                      <h1 className='text-lg font-bold'>dannyniches</h1>
+                    </div>
+                  </div>
+                  <div className='flex items-center space-x-2'>
+                    <div className='bg-custom-gradient p-1'>
+                      <img
+                        src="/images/tiktok.png"
+                        alt="Signage showcase"
+                        className="w-12 h-12"
+                      />
+                    </div>
+                    <div>
+                      <p className='opacity-70'>TikTok:</p>
+                      <h1 className='text-lg font-bold'>dannyniches</h1>
+                    </div>
+                  </div>
+                  <div className='flex items-center space-x-2'>
+                    <div className='bg-custom-gradient p-1'>
+                      <img
+                        src="/images/instagram.png"
+                        alt="Signage showcase"
+                        className="w-12 h-12"
+                      />
+                    </div>
+                    <div>
+                      <p className='opacity-70'>Instagram:</p>
+                      <h1 className='text-lg font-bold'>@dannyniches</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="mt-12 opacity-70 text-center">
+              <p>&copy; 2024 Danny Niches. All rights reserved.</p>
+            </div>
+          </div>
+        </footer>
       </main>
 
 
