@@ -241,10 +241,10 @@ export default function App() {
             </div>
           </div>
         </section>
-        <section className='relative flex bg-dark items-center justify-end'>
-          <div className='h-full absolute top-0 right-0 -z-10 w-7/12 z-0 bg-custom-gradient'>
+        <section className='relative flex flex-col lg:flex-row lg:bg-dark items-center justify-end'>
+          <div className='h-full absolute bottom-0 lg:top-0 right-0 -z-10 f-full w-full lg:w-7/12 lg:z-0 bg-custom-gradient'>
           </div>
-          <div className='h-full absolute -top-14 left-0  w-6/12 bg-green-300'>
+          <div className='h-full lg:absolute -mt-14 lg:mt-0 -top-14 left-0 w-9/12 lg:w-6/12 bg-green-300'>
             <img
               src="/images/cta.jpg"
               alt="Signage showcase"
@@ -252,7 +252,7 @@ export default function App() {
             />
           </div>
           <div className='container mx-auto z-10 px-4 py-28'>
-            <div className='w-1/2 ml-auto pl-4 text-white'>
+            <div className='lg:w-1/2 ml-auto pl-4 text-white'>
               <h1 className='text-5xl font-bold'>
                 Boost Your Brand with Eye-Catching, High-Quality Custom Signage
               </h1>
