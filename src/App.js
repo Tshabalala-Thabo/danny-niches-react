@@ -122,7 +122,7 @@ export default function App() {
               </p>
               <div className="flex justify-start"> {/* Changed this line */}
                 <a
-                  href="#"
+                  href="/"
                   className="relative inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white rounded-md overflow-hidden group"
                 >
                   <span className="absolute inset-0 bg-custom-gradient rounded-md"></span>
@@ -243,7 +243,7 @@ export default function App() {
               </h1>
               <div className="flex justify-start items-center space-x-4 mt-4"> {/* Changed this line */}
                 <a
-                  href="#"
+                  href="/"
                   className="relative inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white overflow-hidden group bg-white"
                 >
                   <span className="relative bg-clip-text text-transparent bg-custom-gradient group-hover:text-white font-bold transition duration-300">
