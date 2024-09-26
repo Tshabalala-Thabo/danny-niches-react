@@ -73,7 +73,7 @@ export default function App() {
             </nav>
             <div className="md:hidden">
               <button
-                className="text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900"
+                className="text-white hover:text-white focus:outline-none focus:text-white"
                 onClick={toggleMenu}
               >
                 {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
