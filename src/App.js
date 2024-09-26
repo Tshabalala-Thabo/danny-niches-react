@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
 import { Menu, X } from 'lucide-react'; // Importing icons from lucide-react
 
 export default function App() {
