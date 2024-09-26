@@ -26,12 +26,12 @@ export default function App() {
   }, []);
 
   const services = [
-    { type: "Outdoor", name: "Static board", image: "/images/1.jpg" },
-    { type: "Wallpaper", name: "Wallpaper wrap", image: "/images/2.jpg" },
-    { type: "Indoor", name: "Lightbox", image: "/images/3.jpg" },
-    { type: "Outdoor", name: "Faricated board sign", image: "/images/4.jpg" },
-    { type: "Others", name: "Letter props", image: "/images/5.jpg" },
-    { type: "Cybersecurity", name: "Threat Protection", image: "/images/1.jpg" },
+    { type: "Outdoor", name: "Static board", image: "/images/1.webp" },
+    { type: "Wallpaper", name: "Wallpaper wrap", image: "/images/2.webp" },
+    { type: "Indoor", name: "Lightbox", image: "/images/3.webp" },
+    { type: "Outdoor", name: "Faricated board sign", image: "/images/4.webp" },
+    { type: "Others", name: "Letter props", image: "/images/5.webp" },
+    { type: "Cybersecurity", name: "Threat Protection", image: "/images/1.webp" },
   ]
 
   const scrollToSection = (event) => {
@@ -105,7 +105,7 @@ export default function App() {
             <div className="w-1/2 bg-dark"></div>
             <div className="w-1/2 relative">
               <img
-                src="/images/hero.jpg"
+                src="/images/hero.webp"
                 alt="Signage showcase"
                 className="w-full h-full opacity-45 md:opacity-60 object-cover"
               />
@@ -231,7 +231,7 @@ export default function App() {
           </div>
           <div className='h-full lg:absolute -mt-14 lg:mt-0 -top-14 left-0 w-9/12 lg:w-6/12 bg-green-300'>
             <img
-              src="/images/cta.jpg"
+              src="/images/cta.webp"
               alt="Signage showcase"
               className="w-full h-full object-cover"
             />
