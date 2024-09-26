@@ -27,11 +27,11 @@ export default function App() {
   }, []);
 
   const services = [
-    { type: "Web Development", name: "Custom Websites", image: "/images/1.jpg" },
-    { type: "Mobile App", name: "iOS & Android Apps", image: "/images/2.jpg" },
-    { type: "UI/UX Design", name: "User-Centric Interfaces", image: "/images/3.jpg" },
-    { type: "Cloud Services", name: "Scalable Solutions", image: "/images/4.jpg" },
-    { type: "Data Analytics", name: "Insights & Reporting", image: "/images/5.jpg" },
+    { type: "Outdoor", name: "Static board", image: "/images/1.jpg" },
+    { type: "Wallpaper", name: "Wallpaper wrap", image: "/images/2.jpg" },
+    { type: "Indoor", name: "Lightbox", image: "/images/3.jpg" },
+    { type: "Outdoor", name: "Faricated board sign", image: "/images/4.jpg" },
+    { type: "Others", name: "Letter props", image: "/images/5.jpg" },
     { type: "Cybersecurity", name: "Threat Protection", image: "/images/1.jpg" },
   ]
 
@@ -51,13 +51,10 @@ export default function App() {
             </div>
             <nav className="hidden md:flex space-x-10">
               <a href="#" className="text-base font-medium">
+                Home
+              </a>
+              <a href="#" className="text-base font-medium">
                 Products
-              </a>
-              <a href="#" className="text-base font-medium">
-                Solutions
-              </a>
-              <a href="#" className="text-base font-medium">
-                Resources
               </a>
               <a href="#" className="text-base font-medium">
                 Contact
@@ -131,57 +128,37 @@ export default function App() {
           </div>
         </div>
         {/* New section */}
-        <section className="w-full py-12 md:py-20 lg:py-20 bg-background">
+        <section className="w-full py-12 md:py-20 lg:py-24">
           <div className="container mx-auto px-4 md:px-6">
-            <div className="md:flex justify-between">
-              <div className="flex flex-col justify-center space-y-4 w-5/12">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+            <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 lg:gap-12">
+              <div className="w-full lg:w-5/12 space-y-4">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
                   Innovative <span className="bg-clip-text text-transparent bg-custom-gradient">Signage</span> Solutions
                 </h2>
-                <p className="max-w-[600px] opacity-70 text-muted-foreground md:text-xl">
+                <p className="max-w-[600px] text-base sm:text-lg md:text-xl opacity-70 text-muted-foreground">
                   Our cutting-edge signage solutions combine creativity, technology, and expertise to deliver impactful visual communications. From digital displays to traditional signage, we bring your message to life.
                 </p>
               </div>
-              <div className=" w-5/12">
-                <div className="flex items-center space-y-2 border-gray-800 p-4 rounded-lg">
-                  <img
-                    src="/images/create.png"
-                    alt="Custom Signage Design"
-                    className="size-20 opacity-45 mx-4 md:opacity-60 object-cover"
-                  />
-                  <div>
-                    <h3 className="text-xl font-bold">Custom Signage Design</h3>
-                    <p className="text-sm text-muted-foreground">
-                      We create unique, eye-catching signage tailored to your brand, ensuring your message stands out everywhere.
-                    </p>
+              <div className="w-full lg:w-6/12 space-y-6">
+                {[
+                  { title: "Custom Signage Design", description: "We create unique, eye-catching signage tailored to your brand, ensuring your message stands out everywhere.", image: "/images/create.png" },
+                  { title: "Durable Materials", description: "Our signs are crafted from high-quality, durable materials, designed to last in both indoor and outdoor environments.", image: "/images/protect.png" },
+                  { title: "Installation Services", description: "We provide professional installation, ensuring your signage is properly placed for maximum visibility and impact.", image: "/images/maintenance.png" }
+                ].map((item, index) => (
+                  <div key={index} className="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-4 shadow-sm border border-gray-200">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-16 h-16 object-cover"
+                    />
+                    <div>
+                      <h3 className="text-xl font-bold mb-2">{item.title}</h3>
+                      <p className="text-sm sm:text-base text-muted-foreground">
+                        {item.description}
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex items-center space-y-2 border-gray-800 p-4 rounded-lg">
-                  <img
-                    src="/images/protect.png"
-                    alt="Durable Materials"
-                    className="size-20 opacity-45 mx-4 md:opacity-60 object-cover"
-                  />
-                  <div>
-                    <h3 className="text-xl font-bold">Durable Materials</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Our signs are crafted from high-quality, durable materials, designed to last in both indoor and outdoor environments.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-center space-y-2 border-gray-800 p-4 rounded-lg">
-                  <img
-                    src="/images/maintenance.png"
-                    alt="Installation Services"
-                    className="size-20 opacity-45 mx-4 md:opacity-60 object-cover"
-                  />
-                  <div>
-                    <h3 className="text-xl font-bold">Installation Services</h3>
-                    <p className="text-sm text-muted-foreground">
-                      We provide professional installation, ensuring your signage is properly placed for maximum visibility and impact.
-                    </p>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
