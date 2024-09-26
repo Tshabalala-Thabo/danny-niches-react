@@ -35,6 +35,18 @@ export default function App() {
     { type: "Cybersecurity", name: "Threat Protection", image: "/images/1.jpg" },
   ]
 
+  const scrollToSection = (event) => {
+    event.preventDefault();
+    const targetId = event.target.getAttribute('href').slice(1);
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+    if (isMenuOpen) {
+      setIsMenuOpen(false);
+    }
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <header className={`fixed top-0 left-0 right-0 text-white shadow-md z-50 transition-colors duration-300 ${isScrolled ? 'bg-dark' : 'bg-transparent'}`}>
@@ -50,13 +62,13 @@ export default function App() {
               </a>
             </div>
             <nav className="hidden md:flex space-x-10">
-              <a href="#" className="text-base font-medium">
+              <a href="#home" className="text-base font-medium" onClick={scrollToSection}>
                 Home
               </a>
-              <a href="#" className="text-base font-medium">
-                Products
+              <a href="#services" className="text-base font-medium" onClick={scrollToSection}>
+                Services
               </a>
-              <a href="#" className="text-base font-medium">
+              <a href="#contact" className="text-base font-medium" onClick={scrollToSection}>
                 Contact
               </a>
             </nav>
@@ -73,18 +85,15 @@ export default function App() {
       </header>
 
       {isMenuOpen && (
-        <div className="md:hidden bg-white shadow-md">
+        <div className="md:hidden fixed top-[64px] left-0 right-0 bg-white shadow-md z-40">
           <div className="container mx-auto px-4 py-2">
-            <a href="#" className="block py-2 text-base font-medium text-gray-500 hover:text-gray-900">
-              Products
+            <a href="#home" className="block py-2 text-base font-medium text-gray-500 hover:text-gray-900" onClick={scrollToSection}>
+              Home
             </a>
-            <a href="#" className="block py-2 text-base font-medium text-gray-500 hover:text-gray-900">
-              Solutions
+            <a href="#services" className="block py-2 text-base font-medium text-gray-500 hover:text-gray-900" onClick={scrollToSection}>
+              Services
             </a>
-            <a href="#" className="block py-2 text-base font-medium text-gray-500 hover:text-gray-900">
-              Resources
-            </a>
-            <a href="#" className="block py-2 text-base font-medium text-gray-500 hover:text-gray-900">
+            <a href="#contact" className="block py-2 text-base font-medium text-gray-500 hover:text-gray-900" onClick={scrollToSection}>
               Contact
             </a>
           </div>
@@ -92,7 +101,7 @@ export default function App() {
       )}
 
       <main className="flex-grow"> {/* Added padding-top to avoid content being hidden behind the fixed header */}
-        <div className="relative h-[100vh] bg-dark z-0"> {/* Set z-index to 0 for the hero section */}
+        <section id="home" className="relative h-[100vh] bg-dark z-0"> {/* Set z-index to 0 for the hero section */}
           <div className="absolute inset-0 flex">
             <div className="w-1/2 bg-dark"></div>
             <div className="w-1/2 relative">
@@ -126,9 +135,9 @@ export default function App() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
         {/* New section */}
-        <section className="w-full py-12 md:py-20 lg:py-24">
+        <section id="products" className="w-full py-12 md:py-20 lg:py-24">
           <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 lg:gap-12">
               <div className="w-full lg:w-5/12 space-y-4">
@@ -164,7 +173,7 @@ export default function App() {
           </div>
         </section>
 
-        <section className='bg-dark'>
+        <section id="services" className='bg-dark'>
           <div className="container mx-auto px-4 py-20">
             <h2 className="text-3xl font-semibold tracking-tighter sm:text-4xl text-center xl:text-5xl/none mb-10 text-white w-1/2 mx-auto">Comprehensive Signage Solutions for Every Business</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -248,7 +257,7 @@ export default function App() {
           </div>
 
         </section>
-        <footer className='bg-dark text-white mt-auto'>
+        <footer id="contact" className='bg-dark text-white mt-auto'>
           <div className='container mx-auto px-4 py-16'>
             <h2 className="text-3xl font-semibold tracking-tighter sm:text-4xl text-center xl:text-5xl/none mb-10 w-full md:w-1/2 mx-auto">Get in touch</h2>
             <div className="flex flex-col lg:flex-row justify-center items-start lg:items-center space-y-8 lg:space-y-0 lg:space-x-16">
