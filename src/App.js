@@ -104,64 +104,65 @@ export default function App() {
             </div>
           </div>
         </div>
-      </main>
-
-      {/* New section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
-        <div className="container px-4 md:px-6">
-          <div className="md:flex">
-            <div className="flex flex-col justify-center space-y-4 w-5/12">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                Innovative <span className="bg-clip-text text-transparent bg-custom-gradient">Signage</span> Solutions
-              </h2>
-              <p className="max-w-[600px] opacity-70 text-muted-foreground md:text-xl">
-                Our cutting-edge signage solutions combine creativity, technology, and expertise to deliver impactful visual communications. From digital displays to traditional signage, we bring your message to life.
-              </p>
-            </div>
-            <div className=" w-5/12">
-              <div className="flex items-center space-y-2 border-gray-800 p-4 rounded-lg">
-                <img
-                  src="/images/create.png"
-                  alt="Custom Signage Design"
-                  className="size-20 opacity-45 md:opacity-60 object-cover"
-                />
-                <div>
-                  <h3 className="text-xl font-bold">Custom Signage Design</h3>
-                  <p className="text-sm text-muted-foreground">
-                    We create unique, eye-catching signage tailored to your brand, ensuring your message stands out everywhere.
-                  </p>
-                </div>
+        {/* New section */}
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-200">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
+            <div className="md:flex justify-between">
+              <div className="flex flex-col justify-center space-y-4 w-5/12">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                  Innovative <span className="bg-clip-text text-transparent bg-custom-gradient">Signage</span> Solutions
+                </h2>
+                <p className="max-w-[600px] opacity-70 text-muted-foreground md:text-xl">
+                  Our cutting-edge signage solutions combine creativity, technology, and expertise to deliver impactful visual communications. From digital displays to traditional signage, we bring your message to life.
+                </p>
               </div>
-              <div className="flex items-center space-y-2 border-gray-800 p-4 rounded-lg">
-                <img
-                  src="/images/durable.png"
-                  alt="Durable Materials"
-                  className="size-20 opacity-45 md:opacity-60 object-cover"
-                />
-                <div>
-                  <h3 className="text-xl font-bold">Durable Materials</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Our signs are crafted from high-quality, durable materials, designed to last in both indoor and outdoor environments.
-                  </p>
+              <div className=" w-5/12 space-y-4">
+                <div className="flex items-center space-y-2 border-gray-800 p-4 rounded-lg bg-white shadow-md">
+                  <img
+                    src="/images/create.png"
+                    alt="Custom Signage Design"
+                    className="size-20 opacity-45 mr-4 md:opacity-60 object-cover"
+                  />
+                  <div>
+                    <h3 className="text-xl font-bold">Custom Signage Design</h3>
+                    <p className="text-sm text-muted-foreground">
+                      We create unique, eye-catching signage tailored to your brand, ensuring your message stands out everywhere.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-center space-y-2 border-gray-800 p-4 rounded-lg">
-                <img
-                  src="/images/install.png"
-                  alt="Installation Services"
-                  className="size-20 opacity-45 md:opacity-60 object-cover"
-                />
-                <div>
-                  <h3 className="text-xl font-bold">Installation Services</h3>
-                  <p className="text-sm text-muted-foreground">
-                    We provide professional installation, ensuring your signage is properly placed for maximum visibility and impact.
-                  </p>
+                <div className="flex items-center space-y-2 border-gray-800 p-4 rounded-lg bg-white shadow-md">
+                  <img
+                    src="/images/protect.png"
+                    alt="Durable Materials"
+                    className="size-20 opacity-45 mr-4 md:opacity-60 object-cover"
+                  />
+                  <div>
+                    <h3 className="text-xl font-bold">Durable Materials</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Our signs are crafted from high-quality, durable materials, designed to last in both indoor and outdoor environments.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-center space-y-2 border-gray-800 p-4 rounded-lg bg-white shadow-md">
+                  <img
+                    src="/images/maintenance.png"
+                    alt="Installation Services"
+                    className="size-20 opacity-45 mr-4 md:opacity-60 object-cover"
+                  />
+                  <div>
+                    <h3 className="text-xl font-bold">Installation Services</h3>
+                    <p className="text-sm text-muted-foreground">
+                      We provide professional installation, ensuring your signage is properly placed for maximum visibility and impact.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </main>
+
+
     </div>
   );
 }
