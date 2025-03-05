@@ -31,7 +31,7 @@ export default function App() {
     { type: "Indoor", name: "Lightbox", image: "/images/3.webp" },
     { type: "Outdoor", name: "Faricated board sign", image: "/images/4.webp" },
     { type: "Others", name: "Letter props", image: "/images/5.webp" },
-    { type: "Cybersecurity", name: "Threat Protection", image: "/images/1.webp" },
+    { type: "Wrap", name: "Vinyl car wrap", image: "/images/vinyl-wrap.jpg" },
   ]
 
   const scrollToSection = (event) => {
