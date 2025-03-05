@@ -273,7 +273,7 @@ export default function App() {
                     </div>
                     <div>
                       <p className='opacity-70'>Phone:</p>
-                      <h1 className='text-lg font-bold'>067 315 7397</h1>
+                      <h1 className='text-lg font-bold'>065 959 7966</h1>
                     </div>
                   </div>
                   <div className='flex items-center space-x-2'>
@@ -286,7 +286,7 @@ export default function App() {
                     </div>
                     <div>
                       <p className='opacity-70'>WhatsApp:</p>
-                      <h1 className='text-lg font-bold'>067 315 7397</h1>
+                      <h1 className='text-lg font-bold'>065 959 7966</h1>
                     </div>
                   </div>
                   <div className='flex items-center space-x-2'>
@@ -317,7 +317,7 @@ export default function App() {
                     </div>
                     <div>
                       <p className='opacity-70'>Facebook:</p>
-                      <h1 className='text-lg font-bold'>dannyniches</h1>
+                      <h1 className='text-lg font-bold'>Danny Niches Production</h1>
                     </div>
                   </div>
                   <div className='flex items-center space-x-2'>
@@ -350,7 +350,7 @@ export default function App() {
               </div>
             </div>
             <div className="mt-12 opacity-70 text-center">
-              <p>&copy; 2024 Danny Niches. All rights reserved.</p>
+              <p>&copy; {new Date().getFullYear()} Danny Niches. All rights reserved.</p>
             </div>
           </div>
         </footer>
