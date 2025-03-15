@@ -28,7 +28,7 @@ A modern React-based website for Danny Niches, showcasing professional signage s
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/danny-niches-react.git
+git clone https://github.com/Tshabalala-Thabo/danny-niches-react.git
 ```
 2. Navigate to the project directory
 ```bash
