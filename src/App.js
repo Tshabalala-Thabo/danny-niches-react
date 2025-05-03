@@ -54,7 +54,7 @@ export default function App() {
     return (
       <div className="min-h-screen flex items-center justify-center bg-dark">
         <div className="text-center text-white px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-custom-gradient">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-clip-text text-transparent text-white">
             Oops!
           </h1>
           <p className="text-xl md:text-2xl opacity-70">
