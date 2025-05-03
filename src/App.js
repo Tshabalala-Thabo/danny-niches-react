@@ -5,6 +5,25 @@ export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
+  // Check website availability from environment variable
+  const isWebsiteAvailable = process.env.REACT_APP_WEBSITE_AVAILABLE === 'true';
+
+  // If website is not available, show maintenance message
+  if (!isWebsiteAvailable) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-dark">
+        <div className="text-center text-white px-4">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-custom-gradient">
+            Oops!
+          </h1>
+          <p className="text-xl md:text-2xl opacity-70">
+            This website is not available currently. Sorry for the inconvenience.
+          </p>
+        </div>
+      </div>
+    );
+  }
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
