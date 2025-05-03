@@ -58,7 +58,7 @@ export default function App() {
             Oops!
           </h1>
           <p className="text-xl md:text-2xl opacity-70">
-            This website is not available currently. Sorry for the inconvenience.
+            This website is currently not available. Sorry for the inconvenience.
           </p>
         </div>
       </div>
